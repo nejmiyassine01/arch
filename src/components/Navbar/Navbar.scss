@@ -1,0 +1,38 @@
+.navbar {
+    height: 150px;
+    display: flex;
+    align-items: center;
+
+    &_container {
+        display: flex;
+        align-items: center;
+    }
+
+    &_links {
+        display: flex;
+        margin-left: 50px;
+
+        & li {
+            margin: 30px;
+
+            & a {
+                color: #7D828F;
+                font-weight: 700;
+                transition: color .3s ease-in;
+
+                &:hover {
+                    color: #111;
+                }
+            }
+        }
+    }
+
+    &_icons {
+        display: none;
+        
+        & svg {
+            font-size: 20px;
+        }
+    }
+    
+}
