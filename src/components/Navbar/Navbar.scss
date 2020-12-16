@@ -2,19 +2,34 @@
     height: 150px;
     display: flex;
     align-items: center;
+    background-color: #fff;
+    z-index: 100;
+    width: 100%;
+
+    @media (max-width: 750px) {
+        height: 100px;
+    }
 
     &_container {
         display: flex;
         align-items: center;
+
+        @media (max-width: 992px) {
+            justify-content: space-between;
+        }
     }
 
     &_links {
         display: flex;
         margin-left: 50px;
-
+        
         & li {
             margin: 30px;
 
+            @media (max-width: 992px) {
+                display: none;
+            }
+            
             & a {
                 color: #7D828F;
                 font-weight: 700;
@@ -29,10 +44,58 @@
 
     &_icons {
         display: none;
+
+        @media (max-width: 992px) {
+            display: block;
+        }
         
         & svg {
-            font-size: 20px;
+            font-size: 25px;
         }
     }
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    height: 500px;
+    background-color: #111;
+    top: 150px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -120%;
+    transition: right .3s ease-in-out;
+
+    @media (min-width: 993px) {
+        display: none;
+    }
+
+    @media (max-width: 750px) {
+        top: 100px;
+    }
+
+    &_active {
+        right: 0;
+        transition: right .3s ease-in-out;
+    }
     
+    & ul {
+        text-align: center;
+
+        & li {
+            padding: 30px;
+        }
+
+        & a {
+            color: #fff;
+            font-weight: 600;
+
+            &:hover {
+                color: #7D828F;
+            }
+        }
+
+    }
 }
