@@ -8,20 +8,22 @@ import './IdeasHome.scss'
 function IdeasHome() {
     return (
         <div className="ideas">
-            <div className="container ideas_container">
-                <div className="ideas_image">
-                    <picture>
-                        <source srcSet={`${smallMob}`} media="(max-width: 800px)" />
-                        <source srcSet={`${smallTab}`} media="(max-width: 1180px)" />
-                        <source srcSet={`${small}`} media="(min-width: 1181px)" />
-                        <img src={small} alt="Paramor" />
-                    </picture>
-                </div>
-                <div className="ideas_content">
-                    <h2>Small team, big ideas</h2>
-                    <Button>
-                        About Us
-                    </Button>
+            <div className="container">
+                <div className="ideas_container">
+                    <div className="ideas_image">
+                        <picture>
+                            <source srcSet={`${smallMob}`} media="(max-width: 800px)" />
+                            <source srcSet={`${smallTab}`} media="(max-width: 1180px)" />
+                            <source srcSet={`${small}`} media="(min-width: 1181px)" />
+                            <img src={small} alt="Paramor" />
+                        </picture>
+                    </div>
+                    <div className="ideas_content">
+                        <h2>Small team, big ideas</h2>
+                        <Button>
+                            About Us
+                        </Button>
+                    </div>
                 </div>
             </div>
         </div>
