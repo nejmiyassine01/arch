@@ -1,0 +1,27 @@
+.btn-cta {
+    background-color: #22242B;
+    border: none;
+    transition: background-color .3s ease;
+    height: 70px;
+    width: 250px;
+    font-weight: 700;
+    cursor: pointer;
+    
+    & a {
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        color:#fff;
+        font-size: 16px;
+    }
+
+    & svg {
+        margin-left: 10px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    &:hover {
+        background-color: #60636D;
+    }
+}

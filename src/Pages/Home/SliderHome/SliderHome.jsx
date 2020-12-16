@@ -1,30 +1,44 @@
-import React from 'react'
-import Paramor from '../../../static/home/desktop/image-hero-paramour.jpg'
-import ParamorTab from '../../../static/home/tablet/image-hero-paramour.jpg'
-import ParamorMob from '../../../static/home/mobile/image-hero-paramour.jpg'
-import { Link } from 'react-router-dom'
-import * as Ai from 'react-icons/ai'
+import React, { useState } from 'react'
+import './SliderHome.scss'
+import SlideHomeData from './SlideHomeData'
+import Button from '../../../components/Button/Button'
 
 function SliderHome() {
+    const [current, setcurrent] = useState(0);
+    const slides = SlideHomeData[current];
+
+    // if (!Array.isArray(slides) || slides.length <= 0) { return null }
+    
+    const onSlide = (e) => {
+        e.preventDefault()
+        setcurrent(parseInt(e.target.id))
+    }
+    
     return (
         <div className="slider">
-            <div className="container">
+            <div className="container" key={slides.id}>
                 <div className="slider_image">
                     <picture>
-                        <source srcSet={`${ParamorMob}`} media="(max-width: 650px)" />
-                        <source srcSet={`${ParamorTab}`} media="(max-width: 1100px)" />
-                        <img src={Paramor} alt="Paramor" />
+                        <source srcSet={`${slides.imgMob}`} media="(max-width: 800px)" />
+                        <source srcSet={`${slides.imgTab}`} media="(max-width: 1180px)" />
+                        <source srcSet={`${slides.img}`} media="(min-width: 1181px)" />
+                        <img src={slides.img} alt="Paramor" />
                     </picture>
                 </div>
                 <div className="slider_content">
-                    <h2>Project Paramour</h2>
-                    <p>Project made for an art museum near Southwest London. Project Paramour is a statement of bold, modern architecture.</p>
-                    <button className="btn-cta">
-                        <Link to="/">
-                            See Our Portfolio <Ai.AiOutlineArrowRight/>
-                        </Link>
-                    </button>
+                    <h2>{slides.title}</h2>
+                    <p>{slides.text}</p>
+                    <Button>
+                        See Our Portfolio
+                    </Button>
                 </div>
+            </div>
+            
+            <div className="slider_numbers">
+                <div className="slider_number" id="0" onClick={onSlide}>01</div>
+                <div className="slider_number" id="1" onClick={onSlide}>02</div>
+                <div className="slider_number" id="2" onClick={onSlide}>03</div>
+                <div className="slider_number" id="3" onClick={onSlide}>04</div>
             </div>
         </div>
     )

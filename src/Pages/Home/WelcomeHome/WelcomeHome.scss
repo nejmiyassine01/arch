@@ -1,0 +1,118 @@
+.welcome {
+    height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    @media (max-width: 1024px) {
+        height: 800px;
+    }
+
+    @media (max-width: 760px) {
+        height: auto;
+        padding: 70px 0;
+    }
+
+    &_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        @media (max-width: 1024px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 85%;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 1024px) {
+            width: 95%;
+        }        
+    }
+    
+    &_content {
+        width: 600px;
+        padding-left: 100px;
+        padding-right: 10px;
+
+        @media (max-width: 1150px) {
+            padding-left: 60px;
+        }
+
+        @media (max-width: 1080px) {
+            padding-left: 0px;
+        }
+
+        @media (max-width: 1024px) {
+            width: 100%;
+            padding-right: 0;
+        }
+        
+        & h2 {
+            font-size: 48px;
+            color: #222;
+            width: 400px;
+            margin-bottom: 30px;
+
+            @media (max-width: 760px) {
+                width: 100%;
+                font-size: 30px;
+            }
+
+            @media (max-width: 450px) {
+                font-size: 22px;
+            }
+        }
+        
+        & p {
+            margin-top: 30px;
+            color: #73757E;
+            line-height: 1.5;
+            font-weight: 500;
+        }
+        
+    }
+
+    &_image {
+
+        & img {
+            padding: 0;
+        }
+
+        @media (max-width: 1024px) {
+            display: none;
+        }
+    }
+
+    &_bigTitle {
+        position: absolute;
+        top: 60px;
+        left: 130px;
+
+        @media (max-width: 1080px) {
+            top: 80px;
+            left: 20px;
+        }
+
+        @media (max-width: 1024px) {
+            top: 100px;
+            left: 20px;
+        }
+
+        @media (max-width: 760px) {
+            display: none;
+        }
+
+        & h2 {
+            letter-spacing: 2px;
+            font-size: 190px;
+            color: #EEEEF4;
+
+            @media (max-width: 1024px) {
+                font-size: 100px;
+            }
+        }
+    }
+}
