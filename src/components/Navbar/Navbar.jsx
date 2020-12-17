@@ -21,7 +21,7 @@ function Navbar() {
                 <ul className="navbar_links">
                     {NavbarData.map((item, index) => (
                         <li key={index}>
-                            <Link to={item.path}>{item.link}</Link>
+                            <NavLink activeClassName="selected" to={item.path}>{item.link}</NavLink>
                         </li>
                     ))}
                 </ul>

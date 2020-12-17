@@ -5,10 +5,11 @@ import Hero from '../../static/about/desktop/image-hero.jpg'
 import HeroTab from '../../static/about/tablet/image-hero.jpg'
 import HeroMob from '../../static/about/mobile/image-hero.jpg'
 import Heritage from './Heritage/Heritage'
+import Leaders from './Leaders/Leaders'
 
 function About() {
     return (
-        <div>
+        <>
             <Professionals
                 mobile={HeroMob}
                 tab={HeroTab}
@@ -18,7 +19,8 @@ function About() {
                 type="About"
             />
             <Heritage />
-        </div>
+            <Leaders/>
+        </>
     )
 }
 

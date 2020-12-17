@@ -1,0 +1,58 @@
+.connect {
+    padding: 100px 0;
+
+    &_container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &_title {
+
+        & h2 {
+            font-size: 45px;
+            width: 250px;
+            color: #1B1D23;
+        }
+
+    }
+
+    &_form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 65%;
+        
+        input {
+            padding: 20px;
+        }
+
+        textarea {
+            padding: 20px 20px 50px 20px;
+        }
+        
+        input, textarea {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #000;
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-size: 18px;
+            outline: none;
+            transition: all .1s ease-in-out;
+
+            &::placeholder {
+                color: #C8D0E3;
+                font-size: 18px;
+            }
+    
+            &::-ms-input-placeholder {
+                color: #C8D0E3;
+                font-size: 18px;
+            }
+            
+            &:focus {
+                border-bottom: 4px solid #000;
+            }
+        }
+    }
+}
