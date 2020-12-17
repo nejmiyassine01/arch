@@ -12,3 +12,5 @@ const DetailsData = [
         phone: '832-123-4321',
     }
 ]
+
+export default DetailsData

@@ -1,0 +1,124 @@
+.details {
+    padding: 60px 0 100px 0;
+
+    @media (max-width: 1200px) {
+        padding: 150px 0;
+    }
+
+    &_container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        @media (max-width: 1200px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        @media (max-width: 992px) {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 767px) {
+            width: 95%;
+        }
+    }
+
+    &_title {
+        width: 250px;
+
+        @media (max-width: 1200px) {
+            width: 100%;
+            margin-bottom: 50px;
+        }
+
+        & h2 {
+            font-size: 45px;
+            color: #1B1D23;
+        }
+    }
+
+    &_contents {
+        display: flex;
+        justify-content: space-between;
+        width: 65%;
+        color: #60636D;
+
+        @media (max-width: 1200px) {
+            width: 75%;
+        }
+
+        @media (max-width: 1100px) {
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 100%;
+        }
+    }
+    
+    &_content {
+        width: 300px;
+        
+        @media (max-width: 1100px) {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        @media (max-width: 767px) {
+            display: block;
+            padding: 20px 0;
+        }
+    }
+    
+    &_office {
+        margin-bottom: 30px;
+
+        h4 {
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 767px) {
+            margin-bottom: 10px;   
+        }
+    }
+    
+    &_info {
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            margin: 10px 0;
+        }
+    }
+
+    &_btn {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        &:hover {
+            button {
+                text-decoration: underline;
+                margin-right: 5px;
+                cursor: pointer;
+            }
+               
+        }
+
+        button {
+            background-color: transparent;
+            border: none;
+            font-weight: 600;
+            font-size: 16px;
+            margin-right: 15px;
+            transition: all .3s ease-in-out;
+            
+            &:hover {
+                text-decoration: underline;
+                margin-right: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import './Details.scss'
-import arrow from '../../../static/icons/icon-arrow-s.svg'
+import arrow from '../../../static/icons/icon-arrow.svg'
+import DetailsData from './DetailsData'
 
 function Details() {
     return (
@@ -10,27 +11,32 @@ function Details() {
                     <div className="details_title">
                         <h2>Contact Details</h2>
                     </div>
-                    <div className="details_content">
-                        <div className="details_office">
-                            <h4>Main Office</h4>
-                            <div className="details_info">
-                                <p>Mail:</p>
-                                <p>archone@mail.com</p>
+                    <div className="details_contents">
+                    {DetailsData.map((detail, index) => (
+                        <div className="details_content" key={index}>
+                            <div className="details_office">
+                                <h4>{detail.title}</h4>
+                                <div className="details_info">
+                                    <p>Mail:</p>
+                                    <p>{detail.mail}</p>
+                                </div>
+                                <div className="details_info">
+                                    <p>Address:</p>
+                                    <p>{detail.address}</p>
+                                </div>
+                                <div className="details_info">
+                                    <p>Phone:</p>
+                                    <p>{detail.phone}</p>
+                                </div>
                             </div>
-                            <div className="details_info">
-                                <p>Address:</p>
-                                <p>1892 Chenoweth Drive TN</p>
-                            </div>
-                            <div className="details_info">
-                                <p>Phone:</p>
-                                <p>123-456-3451</p>
+                            <div className="details_btn">
+                                <button>
+                                    View on Map
+                                </button>
+                                <img src={arrow} alt="arrow" />
                             </div>
                         </div>
-                        <div className="details_btn">
-                            <button>
-                                View on Map <img src={arrow} alt="arrow" />
-                            </button>
-                        </div>
+                    ))}
                     </div>
                 </div>
             </div>
