@@ -6,7 +6,7 @@ function Fixed({ children }) {
         <div className="fixed">
             <div className="fixed_bar"></div>
             <div className="fixed_title">
-                <p>{ children }</p>
+                <h4>{ children }</h4>
             </div>
         </div>
     )

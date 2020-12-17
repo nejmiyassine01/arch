@@ -21,7 +21,6 @@ function Heritage() {
                         <img src={heritageImg} alt="Heritage" />
                     </div>
                 </div>
-
             </div>
         </div>
     )

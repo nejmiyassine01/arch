@@ -20,7 +20,7 @@ function IdeasHome() {
                     </div>
                     <div className="ideas_content">
                         <h2>Small team, big ideas</h2>
-                        <Button>
+                        <Button to="/about">
                             About Us
                         </Button>
                     </div>

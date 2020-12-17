@@ -17,9 +17,6 @@ function SliderHome() {
     
     return (
         <>
-            <Fixed>
-                HOME
-            </Fixed>
             <div className="slider">
                 <div className="container" key={slides.id}>
                     <div className="slider_image">
@@ -33,7 +30,7 @@ function SliderHome() {
                     <div className="slider_content">
                         <h2>{slides.title}</h2>
                         <p>{slides.text}</p>
-                        <Button>
+                        <Button to="/portfolio">
                             See Our Portfolio
                         </Button>
                     </div>

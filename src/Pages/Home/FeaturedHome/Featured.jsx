@@ -11,7 +11,7 @@ function Featured() {
                 <div className="featured_container">
                     <div className="featured_header">
                         <h2>Featured</h2>
-                        <Button>
+                        <Button to='/portfolio'>
                             See All
                         </Button>
                     </div>

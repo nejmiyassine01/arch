@@ -6,10 +6,14 @@ import Hero from '../../static/contact/desktop/image-hero.jpg'
 import Connect from './Connect/Connect'
 import Details from './Details/Details'
 import MapApi from './MapApi/MapApi'
+import Fixed from '../../components/Fixed/Fixed'
 
 function Contact() {
     return (
         <>
+            <Fixed>
+                Contact
+            </Fixed>
             <Professionals
                 mobile={HeroMob}
                 tab={HeroTab}

@@ -6,10 +6,14 @@ import HeroTab from '../../static/about/tablet/image-hero.jpg'
 import HeroMob from '../../static/about/mobile/image-hero.jpg'
 import Heritage from './Heritage/Heritage'
 import Leaders from './Leaders/Leaders'
+import Fixed from '../../components/Fixed/Fixed'
 
 function About() {
     return (
         <>
+            <Fixed>
+                About
+            </Fixed>
             <Professionals
                 mobile={HeroMob}
                 tab={HeroTab}

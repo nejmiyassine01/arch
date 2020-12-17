@@ -14,12 +14,14 @@
         transform: rotateZ(90deg);
         color: #C8CCD8;
         position: absolute;
-        top: 220px;
-        left: -100px;
+        top: 250px;
+        left: -192px;
         letter-spacing: 10px;
         
-        & p {
+        & h4 {
             text-transform: uppercase;
+            height: 100px;
+            width: 300px;
         }
     }
 
