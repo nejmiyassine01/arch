@@ -1,9 +1,10 @@
 import React from 'react'
+import Professionals from './Professionals/Professionals'
 
 function About() {
     return (
         <div>
-            <h2>About</h2>
+            <Professionals/>
         </div>
     )
 }

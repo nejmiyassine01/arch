@@ -6,7 +6,7 @@ import Seraph from '../../../static/home/desktop/image-hero-seraph.jpg'
 import SeraphTab from '../../../static/home/tablet/image-hero-seraph.jpg'
 import SeraphMob from '../../../static/home/mobile/image-hero-seraph.jpg'
 
-import Federal from '../../../static/home/desktop/image-hero-seraph.jpg'
+import Federal from '../../../static/home/desktop/image-hero-federal.jpg'
 import FederalTab from '../../../static/home/tablet/image-hero-federal.jpg'
 import FederalMob from '../../../static/home/mobile/image-hero-federal.jpg'
 

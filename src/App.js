@@ -10,6 +10,7 @@ import Portfolio from './Pages/Portfolio/Portfolio'
 import About from './Pages/About/About'
 import Contact from './Pages/Contact/Contact'
 import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -19,9 +20,10 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/portfolio" component={Portfolio} />
-          <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
+          <Route path="/about" component={About} />
         </Switch>
+        <Footer/>
       </Router>  
     </div>
   );

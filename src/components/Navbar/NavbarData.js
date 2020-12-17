@@ -1,8 +1,8 @@
 const NavbarData = [
-    {
-        link: 'Home',
-        path: '/',
-    },
+    // {
+    //     link: 'Home',
+    //     path: '/',
+    // },
     {
         link: 'Portfolio',
         path: '/portfolio',

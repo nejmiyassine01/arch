@@ -3,8 +3,12 @@
     display: flex;
     align-items: center;
     background-color: #fff;
-    z-index: 100;
     width: 100%;
+
+    @media(max-width: 992px) {
+        z-index: 100;
+        position: fixed;
+    }
 
     @media (max-width: 750px) {
         height: 100px;
@@ -68,6 +72,7 @@
     align-items: center;
     right: -120%;
     transition: right .3s ease-in-out;
+    z-index: 100;
 
     @media (min-width: 993px) {
         display: none;

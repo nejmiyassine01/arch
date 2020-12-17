@@ -1,0 +1,29 @@
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 70px;
+    z-index: 150;
+
+    &_bar {
+        width: 1px;
+        height: 100px;
+        background-color: #C8CCD8;
+    }
+
+    &_title {
+        transform: rotateZ(90deg);
+        color: #C8CCD8;
+        position: absolute;
+        top: 220px;
+        left: -100px;
+        letter-spacing: 10px;
+        
+        & p {
+            text-transform: uppercase;
+        }
+    }
+
+    @media (max-width: 992px) {
+        display: none;
+    }
+}

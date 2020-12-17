@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import NavbarData from './NavbarData.js'
 import * as Ai from 'react-icons/ai'
 import Logo from '../../static/logo.svg'
@@ -13,9 +13,11 @@ function Navbar() {
     return (
         <div className="navbar">
             <div className="container navbar_container">
-                <div className="navbar_logo">
-                    <img src={Logo} alt="Logo" />
-                </div>
+                <NavLink to="/">
+                    <div className="navbar_logo">
+                        <img src={Logo} alt="Logo" />
+                    </div>
+                </NavLink>
                 <ul className="navbar_links">
                     {NavbarData.map((item, index) => (
                         <li key={index}>

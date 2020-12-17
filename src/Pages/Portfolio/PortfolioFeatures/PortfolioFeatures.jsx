@@ -1,25 +1,18 @@
 import React from 'react'
-import Button from '../../../components/Button/Button'
-import './Featured.scss'
+import FeaturedPortfolioData from './PortfolioFeaturesData'
 import { Link } from 'react-router-dom'
-import FeaturedData from './FeaturedData'
+import './PortfolioFeatures.scss'
 
-function Featured() {
+function PortfolioFeatures() {
     return (
-        <div className="featured">
+        <div className="featured featuredData">
             <div className="container">
                 <div className="featured_container">
-                    <div className="featured_header">
-                        <h2>Featured</h2>
-                        <Button>
-                            See All
-                        </Button>
-                    </div>
                     <div className="featured_boxes">
-                        <Link to="/portfolio">
-                            {FeaturedData.map((item, index) => (
+                        <Link to="/portfolio" className="featured_links">
+                            {FeaturedPortfolioData.map((item, index) => (
                                 <div className="featured_box" key={index}>
-                                    <div className="featured_box--img">
+                                    <div className="featured_box--img featured_box--imgHover">
                                         <picture>
                                             <source srcSet={`${item.imgMob}`} media="(max-width: 767px)" />
                                             <source srcSet={`${item.imgTab}`} media="(max-width: 1199px)" />
@@ -29,10 +22,7 @@ function Featured() {
                                     </div>
                                     <div className="featured_box--content">
                                         <h3>{item.title}</h3>
-                                        <p>View All Projects</p>
-                                    </div>
-                                    <div className="featured_box--number">
-                                        <h2>{item.num}</h2>
+                                        <p>{item.date}</p>
                                     </div>
                                 </div>
                             ))}
@@ -44,4 +34,4 @@ function Featured() {
     )
 }
 
-export default Featured
+export default PortfolioFeatures

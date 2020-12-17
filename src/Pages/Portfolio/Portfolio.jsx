@@ -1,10 +1,15 @@
 import React from 'react'
+import Fixed from '../../components/Fixed/Fixed'
+import PortfolioFeatures from './PortfolioFeatures/PortfolioFeatures'
 
 function Portfolio() {
     return (
-        <div>
-            <h2>Portfolio</h2>
-        </div>
+        <>
+            <Fixed>
+                Portfolio
+            </Fixed>
+            <PortfolioFeatures/>
+        </>
     )
 }
 
