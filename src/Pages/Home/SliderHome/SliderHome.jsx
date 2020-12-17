@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import './SliderHome.scss'
 import SlideHomeData from './SlideHomeData'
 import Button from '../../../components/Button/Button'
-import Fixed from '../../../components/Fixed/Fixed';
 
 function SliderHome() {
     const [current, setcurrent] = useState(0);
