@@ -31,10 +31,6 @@ function SliderHome() {
 		};
 	}, [current, length]);
 
-	if (!Array.isArray(slides) || slides.length <= 0) {
-		return null;
-	}
-
 	return (
 		<div className="slider">
 			<div className="container" key={slides.id}>
